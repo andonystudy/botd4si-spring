@@ -87,14 +87,14 @@ public class CoffeeCategory {
             Client client = clientService.findByUserDiscordId(userId);
             if (client == null){
                 eb.setColor(0x16817A);
-                eb.setAuthor("BILLETERA NO CREADA 💰");
+                eb.setAuthor("BILLETERA DE " + event.getAuthor().getName().toUpperCase() + " NO CREADA 💰");
                 eb.setDescription("Por favor active su billetera consultando ... `>billetera`");
                 event.getTextChannel().sendMessage(eb.build()).queue();
                 return;
             }
             if (client.getCoin() < 10){
                 eb.setColor(0x16817A);
-                eb.setAuthor("MI BILLETERA 💰 ... " + client.getCoin());
+                eb.setAuthor("BILLETERA DE " + event.getAuthor().getName().toUpperCase() + " 💰 ... " + client.getCoin());
                 eb.setDescription("Cuenta con menos de $10, no puede realizar una compra 😥");
                 event.getTextChannel().sendMessage(eb.build()).queue();
                 return;
@@ -146,7 +146,7 @@ public class CoffeeCategory {
                 if (mess.contains(coffee.getId().toString())){
                     if (client.getCoin() < coffee.getPrice()){
                         eb.setColor(0x16817A);
-                        eb.setAuthor("MI BILLETERA 💰 ... " + client.getCoin());
+                        eb.setAuthor("BILLETERA DE " + event.getAuthor().getName().toUpperCase() + " 💰 ... " + client.getCoin());
                         eb.setDescription("No cuenta con el dinero suficiente para realizar esta compra. 😟");
                     }else{
                         clientService.subtractCoin(client, coffee.getPrice());
