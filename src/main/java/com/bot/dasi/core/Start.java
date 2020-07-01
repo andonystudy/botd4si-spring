@@ -17,8 +17,6 @@ import javax.security.auth.login.LoginException;
 @Component
 public class Start extends ListenerAdapter {
 
-    private static final String DANIELBOT_TOKEN = "";
-    private static final String CHAMOBOT_TOKEN = "NzE0MjQyNDgxNjc1NTY3MTg1.Xvv4Yg.lQpxFHUtGCITVHg0Jntt7Yp6ppA";
     private static final String BOT_TOKEN = "NzE0MjYzMTQxNzY4NDk1MTk0.Xs3YmA.psf_8Ox_jgUZwZRn-cskEQvofdg";
     private static final long TEST_CHANNEL = 702274131416317962L;
 
@@ -34,12 +32,6 @@ public class Start extends ListenerAdapter {
     public void init() throws LoginException {
         jda = new JDABuilder(BOT_TOKEN).build();
         jda.addEventListener(this);
-
-        jda = new JDABuilder(CHAMOBOT_TOKEN).build();
-        jda.addEventListener(this);
-
-//        jda = new JDABuilder(DANIELBOT_TOKEN).build();
-//        jda.addEventListener(this);
     }
 
     @Override

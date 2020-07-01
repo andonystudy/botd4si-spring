@@ -75,10 +75,10 @@ public class CoffeeCategory {
                 Client newClient = clientService.create(client);
 
                 eb.setColor(0x16817A);
-                eb.setAuthor("MI BILLETERA 💰 - $" + newClient.getCoin());
+                eb.setAuthor("MI BILLETERA 💰 ... $" + newClient.getCoin());
             } else{
                 eb.setColor(0x16817A);
-                eb.setAuthor("MI BILLETERA 💰 - $" + findClient.getCoin());
+                eb.setAuthor("MI BILLETERA 💰 ... $" + findClient.getCoin());
             }
             event.getTextChannel().sendMessage(eb.build()).queue();
         }
