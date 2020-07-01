@@ -113,6 +113,22 @@ public class CoffeeCategory {
             }
         }
 
+        for (String keyword: keywords){
+            if (mess.contains(keyword) &&
+                    (event.getTextChannel().getIdLong() == channelID ||
+                    event.getTextChannel().getIdLong() == 706167638488776765L ||
+                    event.getTextChannel().getIdLong() == 701942512964862033L ||
+                    event.getTextChannel().getIdLong() == 712136033080442930L )){
+                eb.setColor(COLOR_EMBED);
+                eb.setAuthor("COFFEE SHOP");
+                eb.setTitle("Café?");
+                eb.setDescription("**" + event.getAuthor().getName() + "** ¿Desea un café?, puede revisar nuestra lista ... `>c lista`");
+                eb.setThumbnail("https://66.media.tumblr.com/53dac09a10e08e1fde7d1594c203e5e1/tumblr_pbpv7u4AnQ1qglptqo2_500.gif");
+                event.getTextChannel().sendMessage(eb.build()).queue();
+                return;
+            }
+        }
+
         if (mess.equals(">c lista") || mess.equals(">c list")){
             eb.setColor(COLOR_EMBED);
             eb.setAuthor("COFFEE SHOP [LISTA]");

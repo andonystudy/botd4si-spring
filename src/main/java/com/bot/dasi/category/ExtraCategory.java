@@ -26,10 +26,10 @@ public class ExtraCategory {
         String mess = event.getMessage().getContentRaw();
         Long thisChannelId = event.getTextChannel().getIdLong();
 
-        if (mess.startsWith(">code")){
+        if (mess.startsWith(">http")){
             String[] msgSplit = mess.split(" ");
             if (msgSplit.length == 1){
-                event.getTextChannel().sendMessage("Asigne un código: `>code [code]` ... ex -> `>code 404`").queue();
+                event.getTextChannel().sendMessage("Asigne un código: `>http [code]` ... ex -> `>code 404`").queue();
             } else{
                 EmbedBuilder eb = new EmbedBuilder();
                 eb.setColor(0x3CFF89);
