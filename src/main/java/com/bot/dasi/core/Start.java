@@ -44,8 +44,8 @@ public class Start extends ListenerAdapter {
         coffeeCategory.coffeeService(event, TEST_CHANNEL);
     }
 
-    @Override
-    public void onMessageUpdate(@Nonnull MessageUpdateEvent event) {
-        extraCategory.messageUpdate(event, TEST_CHANNEL);
-    }
+//    @Override
+//    public void onMessageUpdate(@Nonnull MessageUpdateEvent event) {
+//        extraCategory.messageUpdate(event, TEST_CHANNEL);
+//    }
 }
