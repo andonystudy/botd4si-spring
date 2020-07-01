@@ -96,7 +96,8 @@ public class ExtraCategory {
                 "Si dormir es gratis ¿Porque cuesta tanto levantarnos?",
                 "Si meto la calculadora al refrigerador, entonces ¿tengo todo fríamente calculado?",
                 "¿Porque se llaman analgesicos? si se toman de forma oral.",
-                "Si los que tienen pelo rojo son pelirrojos entonces ...¿Los que tienen el pelo grueso son peligrosos?"
+                "Si los que tienen pelo rojo son pelirrojos entonces ...¿Los que tienen el pelo grueso son peligrosos?",
+                "Un dia me encontre un otaku triste... y lo anime"
         };
 
         String firstUserMentionedId = "";

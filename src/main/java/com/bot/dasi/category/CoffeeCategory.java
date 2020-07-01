@@ -102,7 +102,7 @@ public class CoffeeCategory {
         }
 
         for (String keyword: keywords){
-            if (mess.contains(keyword)){
+            if (mess.contains(keyword) && mess.startsWith(">c")){
                 eb.setColor(COLOR_EMBED);
                 eb.setAuthor("COFFEE SHOP");
                 eb.setTitle("Café?");
