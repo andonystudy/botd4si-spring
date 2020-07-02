@@ -4,6 +4,7 @@ import com.bot.dasi.category.CoffeeCategory;
 import com.bot.dasi.category.ExtraCategory;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.events.message.MessageUpdateEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -30,8 +31,9 @@ public class Start extends ListenerAdapter {
 
     @PostConstruct
     public void init() throws LoginException {
-        jda = new JDABuilder(BOT_TOKEN).build();
+        jda = new JDABuilder(BOT_TOKEN).setActivity(Activity.playing("Visual Studio Code")).build();
         jda.addEventListener(this);
+
     }
 
     @Override

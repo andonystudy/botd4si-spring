@@ -66,40 +66,40 @@ public class ExtraCategory {
 
     public void mentionBot(MessageReceivedEvent event){
         String[] resp = {
-                "¿Porqué cuando contestamos una llamada decimos `¿aló?`?",
+//                "¿Porqué cuando contestamos una llamada decimos `¿aló?`?",
                 "¿Donde esta la  otra mitad del medio oriente?",
                 "Si ordinario es sinónimo de vulgar, ¿por qué extraordinario no significa muy vulgar?",
                 "Una mujer embarazada nadando, ¿es un submarino?",
                 "Si la música se reproduce ¿Porque no tiene hijos?.",
                 "¿Los cangrejos piensan que los peces vuelan?",
-                "¿Los vegetarianos comen galletas de animalitos?",
-                "¿Los perros ladran en el mismo idioma?",
+                "¿Los vegetarianos comen galletas de animalitos?",               "¿Los perros ladran en el mismo idioma?",
                 "¿Dónde está la otra mitad del medio ambiente?",
                 "Si un arquitecto muere, entonces, ¿pasa a otro plano?",
+                "Le hice overclock a mi cama .... ahora duermo con mas frecuencia",
                 "Si el agua es incolora, ¿Porqué la parte de una toalla que ha sido sumergida en agua es de color más oscuro que la parte seca?",
                 "Cuando inventaron el reloj, ¿Cómo sabían qué hora era?",
                 "¿Cuál es el sinónimo de la palabra sinónimo?",
                 "¿Por qué la cómoda se llama así, si la cama es mucho más cómoda?",
                 "¿Como es posible que no podamos prounciar la `R` mentalmente sin mover la lengua?",
-                "¿Cuanto mas suicidas hay, menos suicidas hay?",
+//                "¿Cuanto mas suicidas hay, menos suicidas hay?",
+                "Un dia me encontre un otaku triste... y lo anime",
                 "Cuando una película está doblada, ¿solo ves la mitad?",
                 "Si cárcel y prisión son sinónimos, ¿por qué no lo son carcelero y prisionero?",
                 "Si la piscina es honda, ¿el mar es Toyota?",
                 "¿Por qué no podemos estornudar con los ojos abiertos?",
                 "¿Por qué la palabra `abreviación` es tan larga?",
                 "¿A dónde van todas las moscas en invierno?",
-                "Si no debes hablar con extraños ¿Cómo hiciste amigos?",
-                "¿En qué idioma piensa un sordo?",
+//                "Si no debes hablar con extraños ¿Cómo hiciste amigos?",
+//                "¿En qué idioma piensa un sordo?",
                 "Si un apocalipsis zombi pasa en las vegas ¿Se queda en las vegas?",
                 "Si los zombies llegan a tu casa ..- `¿ZOMBIENVENIDOS?`",
                 "Si un solo profesor no puede enseñar todos los cursos ¿Porque un solo alumno debe aprenderse todos?",
                 "Si dormir es gratis ¿Porque cuesta tanto levantarnos?",
-                "Si meto la calculadora al refrigerador, entonces ¿tengo todo fríamente calculado?",
-                "¿Porque se llaman analgesicos? si se toman de forma oral.",
-                "Si los que tienen pelo rojo son pelirrojos entonces ...¿Los que tienen el pelo grueso son peligrosos?",
-                "Un dia me encontre un otaku triste... y lo anime"
-        };
 
+                "¿Porque se llaman analgesicos? si se toman de forma oral.",
+                "Si los que tienen pelo rojo son pelirrojos entonces ...¿Los que tienen el pelo grueso son peligrosos?"
+        };
+/* "Si meto la calculadora al refrigerador, entonces ¿tengo todo fríamente calculado?",*/
         String firstUserMentionedId = "";
         List<User> mentionedUsers = event.getMessage().getMentionedUsers();
         if(mentionedUsers.size() > 0) {
